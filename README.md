@@ -4,7 +4,7 @@ This fork aims to fix various biases of the origin (some points are inspired by
 a review of forks).
 
 *(very soon)*
-* [ ] Various small fix
+* [X] Various small fix (branch variousfix)
 * [ ] Fix Ubuntu watching
 * [ ] Fix Debian watching
 * [ ] Add other distro

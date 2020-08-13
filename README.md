@@ -1,3 +1,23 @@
+## Changelog
+
+This fork aims to fix various biases of the origin (some points are inspired by
+a review of forks).
+
+*(very soon)*
+* [ ] Various small fix
+* [ ] Fix Ubuntu watching
+* [ ] Fix Debian watching
+* [ ] Add other distro
+* [ ] Add other libc than glibc (musl, dietlibc, etc.)
+* [ ] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc.
+
+*(A day if possible)*
+* [ ] Review symbols, to see if other symbols can be accurate
+* [ ] Improve the `dump` executable
+* [ ] See if adding `ld` library is relevant, and do it if it is
+* [ ] Add libc dbg symbols if relevant
+
+
 ## Building a libc offset database
 
 Fetch all the configured libc versions and extract the symbol offsets.

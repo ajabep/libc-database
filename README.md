@@ -12,6 +12,7 @@ a review of forks).
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*
+* [ ] Add db compression (zstd w/ dict ?)
 * [ ] Review symbols, to see if other symbols can be accurate
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is

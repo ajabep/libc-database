@@ -4,12 +4,12 @@ This fork aims to fix various biases of the origin (some points are inspired by
 a review of forks).
 
 *(very soon)*
-* [X] Various small fix (branch variousfix)
-* [X] Fix Ubuntu watching (branch UbuntuAndDebMonitoring)
-* [X] Fix Debian watching (branch UbuntuAndDebMonitoring)
+* [X] Various small fix (branch `variousfix`)
+* [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
+* [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
 * [ ] Add other distro
 * [ ] Add other libc than glibc (musl, dietlibc, etc.)
-* [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch search)
+* [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*
 * [ ] Review symbols, to see if other symbols can be accurate

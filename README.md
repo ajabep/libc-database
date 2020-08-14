@@ -8,12 +8,12 @@ a review of forks).
 * [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
 * [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
 * [x] Add other distro (branch `otherDistro`)
-* [X] `[WIP]` Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs`)
+* [ ] **`[WIP]`** Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs`)
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*
-* [ ] Add db compression (zstd w/ dict ?)
-* [ ] Review symbols, to see if other symbols can be accurate
+* [ ] Add db compression (`zstd` w/ dict ?)
+* [ ] **[WIP]** Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs`)
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is
 * [ ] Add libc dbg symbols if relevant

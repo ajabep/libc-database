@@ -9,7 +9,7 @@ a review of forks).
 * [X] Fix Debian watching (branch UbuntuAndDebMonitoring)
 * [ ] Add other distro
 * [ ] Add other libc than glibc (musl, dietlibc, etc.)
-* [ ] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc.
+* [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch search)
 
 *(A day if possible)*
 * [ ] Review symbols, to see if other symbols can be accurate

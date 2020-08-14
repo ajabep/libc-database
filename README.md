@@ -8,7 +8,7 @@ a review of forks).
 * [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
 * [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
 * [x] Add other distro (branch `otherDistro`)
-* [ ] Add other libc than glibc (musl, dietlibc, etc.)
+* [X] `[WIP]` Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs`)
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*

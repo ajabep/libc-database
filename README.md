@@ -7,15 +7,15 @@ a review of forks).
 
 *(very soon)*
 * [X] **MERGED** Various small fixes (branch `variousfix`)
-* [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
-* [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
-* [x] Add other distro (branch `otherDistro` ; Alpine is added in branch `otherLibs`: it has only musl)
-* [X] Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs` ; Added Musl and DietLibc only)
-* [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
+* [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring` ; see [niklasb/libc-database#23](https://github.com/niklasb/libc-database/pull/23))
+* [X] Fix Debian watching (branch `UbuntuAndDebMonitoring` ; see [niklasb/libc-database#23](https://github.com/niklasb/libc-database/pull/23))
+* [x] Add other distro (branch `otherDistro` ; Alpine is added in branch `otherLibs`: it has only musl ; see [niklasb/libc-database#24](https://github.com/niklasb/libc-database/pull/24))
+* [X] Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs` ; Added Musl and DietLibc only ; see [niklasb/libc-database#25](https://github.com/niklasb/libc-database/pull/25))
+* [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search` ; see [niklasb/libc-database#22](https://github.com/niklasb/libc-database/pull/22))
 
 *(A day if possible)*
 * [ ] Add db compression (`zstd` w/ dict ?)
-* [X] Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs` ; Patch taken from [@blukat29](https://github.com/blukat29/libc-database/commit/287ca62960181a6bbd206e679c7331cae305a87b#diff-6f1488814a51063192c9aabb59112ef1R11))
+* [X] Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs` ; Patch taken from [@blukat29](https://github.com/blukat29/libc-database/commit/287ca62960181a6bbd206e679c7331cae305a87b#diff-6f1488814a51063192c9aabb59112ef1R11) ; see [niklasb/libc-database#25](https://github.com/niklasb/libc-database/pull/25))
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is
 * [ ] Add libc dbg symbols if relevant

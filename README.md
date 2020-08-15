@@ -32,6 +32,7 @@ a review of forks).
   
   **Design**  
   In order to be configurable (enable or not compression, the tools to use and compression options), we use environment variables. By default, the compression is enabled, using `xz` and its highest compression level (`-9e`). It will only compress `.so` files: `.symbols` files are already used in clear text. It's faster to have a gain like that.
+* [ ] Reduce time of computation of some tools (I thinking about `search`: we can extract hash when adding files)
 * [X] Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs` ; Patch taken from [@blukat29](https://github.com/blukat29/libc-database/commit/287ca62960181a6bbd206e679c7331cae305a87b#diff-6f1488814a51063192c9aabb59112ef1R11) ; see [niklasb/libc-database#25](https://github.com/niklasb/libc-database/pull/25))
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is

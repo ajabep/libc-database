@@ -6,7 +6,7 @@ This fork aims to fix various biases of the origin (some points are inspired by
 a review of forks).
 
 *(very soon)*
-* [X] Various small fix (branch `variousfix`)
+* [X] **MERGED** Various small fixes (branch `variousfix`)
 * [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
 * [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
 * [x] Add other distro (branch `otherDistro` ; Alpine is added in branch `otherLibs`: it has only musl)

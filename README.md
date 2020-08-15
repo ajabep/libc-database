@@ -14,7 +14,24 @@ a review of forks).
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search` ; see [niklasb/libc-database#22](https://github.com/niklasb/libc-database/pull/22))
 
 *(A day if possible)*
-* [ ] Add db compression (`zstd` w/ dict ?)
+* [ ] Add db compression  
+  **Requirements**
+  * The goal of the compression is to reduce the size of db, but it has not to make it unusable (the search and other usages have to stay fast). The compression can be slower: it already takes lots of time and can be run as a cron or in background.
+  * The compression must be optional, and have to be easily disabled.
+  * Tools have to works both with compressed files and uncompressed ones.
+  * It's better if the tool used to compress is a standard tool, present on lots of distros, by default.
+  
+  **Benchmarks** (absolutely not perfect, but "it works")
+  * Benchmarks have been done using the database build with all libs and distro (branch `otherLibs`). This database is composed of 685 libraries and is 1,3 GB.
+  * `.info` and `.url` files are too small to need compression.
+  * Using `zstd` compression using a custom dictionary to compress `.so` and `.symbols` (using the highest compression level), we gain 64% (db size: 447MB). A single-file compression can be parallelized.
+  * Using `zstd` compression *without* using a custom dictionary to compress `.so` and `.symbols` (using the highest compression level), we gain 64% (db size: 449MB). A single-file compression can be parallelized.
+  * Using `xz` compression to compress `.so` and `.symbols` (using the highest compression level), we gain 67% (db size: 409MB). A single-file compression can be parallelized.
+  * Using `bzip2` compression to compress `.so` and `.symbols` (using the highest compression level), we gain 60% (db size: 494MB).
+  * Using `gzip` compression to compress `.so` and `.symbols` (using the highest compression level), we gain 59% (db size: 551MB).
+  
+  **Design**  
+  In order to be configurable (enable or not compression, the tools to use and compression options), we use environment variables. By default, the compression is enabled, using `xz` and its highest compression level (`-9e`). It will only compress `.so` files: `.symbols` files are already used in clear text. It's faster to have a gain like that.
 * [X] Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs` ; Patch taken from [@blukat29](https://github.com/blukat29/libc-database/commit/287ca62960181a6bbd206e679c7331cae305a87b#diff-6f1488814a51063192c9aabb59112ef1R11) ; see [niklasb/libc-database#25](https://github.com/niklasb/libc-database/pull/25))
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is

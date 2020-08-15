@@ -7,13 +7,13 @@ a review of forks).
 * [X] Various small fix (branch `variousfix`)
 * [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
 * [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
-* [x] Add other distro (branch `otherDistro`)
+* [x] Add other distro (branch `otherDistro` ; Alpine is added in branch `otherLibs`: it has only musl)
 * [ ] **`[WIP]`** Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs`)
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*
 * [ ] Add db compression (`zstd` w/ dict ?)
-* [ ] **[WIP]** Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs`)
+* [X] Review symbols, to see if other symbols can be accurate (required by adding other libs, thus in branch `otherLibs` ; Patch taken from [@blukat29](https://github.com/blukat29/libc-database/commit/287ca62960181a6bbd206e679c7331cae305a87b#diff-6f1488814a51063192c9aabb59112ef1R11))
 * [ ] Improve the `dump` executable
 * [ ] See if adding `ld` library is relevant, and do it if it is
 * [ ] Add libc dbg symbols if relevant

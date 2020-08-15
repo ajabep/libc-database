@@ -1,5 +1,7 @@
 ## Changelog
 
+:warning: This fork do not aim to be updated or better than the origin, it aims to be a code base to pull requests only.
+
 This fork aims to fix various biases of the origin (some points are inspired by
 a review of forks).
 
@@ -8,7 +10,7 @@ a review of forks).
 * [X] Fix Ubuntu watching (branch `UbuntuAndDebMonitoring`)
 * [X] Fix Debian watching (branch `UbuntuAndDebMonitoring`)
 * [x] Add other distro (branch `otherDistro` ; Alpine is added in branch `otherLibs`: it has only musl)
-* [ ] **`[WIP]`** Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs`)
+* [X] Add other libc than glibc (musl, dietlibc, etc.) (branch `otherLibs` ; Added Musl and DietLibc only)
 * [X] Be able to search a libc using a BuildID/MD5/SHA1/SHA256/etc. (branch `search`)
 
 *(A day if possible)*
